@@ -10,8 +10,7 @@
 | **AI làm được** | Sinh User Story, Acceptance Criteria và Test Scenario đúng phạm vi yêu cầu | Sinh 28 Test Case với các kiểm tra Required, Validation, Min/Max | Sinh API Test, Assertions, JSON Schema Validation và Boundary Tests |
 | **Hạn chế** | Vẫn cần QA kiểm tra trước khi sử dụng | Thiếu khoảng 25% Test Case, có Test Case trùng, tự suy luận Business Rule không tồn tại, dữ liệu ngày tháng lỗi thời | Không hiểu Business Rule đặc thù, vẫn cần QA xác minh kết quả |
 | **Hallucination** | 0% | Có (1 Business Rule tự suy luận và một số Test Case trùng lặp) | Không nêu tỷ lệ cụ thể, vẫn cần QA đối chiếu yêu cầu |
-| **Khả năng tùy chỉnh** | Không đề cập | Trung bình (5/10), hỗ trợ chọn Template và Preview trước khi tạo | Không đề cập |
-| **Bảo mật dữ liệu** | Không đề cập | Requirement được gửi lên server của TestRail, có thể không phù hợp với dữ liệu nhạy cảm | Không đề cập |
+| **Khả năng tùy chỉnh** | Không đề cập | Trung bình, hỗ trợ chọn Template và Preview trước khi tạo | Không đề cập |
 | **Kết luận** | Giảm hơn 50% thời gian tạo tài liệu QA, chất lượng tốt sau khi QA review | Tiết kiệm nhiều thời gian nhưng bắt buộc phải QA review | Rất phù hợp để tăng tốc API Testing nhưng không thể thay thế QA |
 
 
