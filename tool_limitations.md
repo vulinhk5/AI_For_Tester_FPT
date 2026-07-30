@@ -34,7 +34,7 @@
 | **Khoảng trống về coverage** | Loại trừ phạm vi rõ ràng | ~77%, bỏ sót UI tĩnh | Bỏ sót trường không có trong API |
 | **Phát hiện được input không khớp yêu cầu thực tế** | N/A | N/A | ❌ (không phát hiện Login API và UC10 bị lệch pha) |
 | **Có cảnh báo về bảo mật dữ liệu** | Không đề cập | ✅ Có cảnh báo và khuyến nghị anonymize | Không đề cập |
-| **Bắt buộc con người review** | ✅ | ✅ (ngầm định) | ✅ |
+| **Bắt buộc con người review** | ✅ | ✅  | ✅ |
 
 > **Kết luận**
 >
