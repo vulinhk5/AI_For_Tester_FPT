@@ -1,1 +1,8 @@
-m
+| Tiêu chí | Jira Rovo AI | TestRail AI | Postman Postbot AI |
+|----------|--------------|-------------|--------------------|
+| **Dữ liệu được xử lý** | Requirement, User Story, Acceptance Criteria, Test Scenario được gửi tới AI để sinh nội dung. | Requirement, Use Case và Business Rules được gửi lên server TestRail để sinh Test Case. | Username, Password, JWT Token và Refresh Token trong quá trình sinh API Test Script. |
+| **Nơi xử lý dữ liệu** | Dịch vụ AI trên nền tảng cloud của Jira/Atlassian. | Server của TestRail. | Dịch vụ AI trên nền tảng cloud của Postman. |
+| **Rủi ro chính** | Requirement hoặc thông tin dự án có thể bị gửi tới dịch vụ AI nếu sử dụng dữ liệu thật. | Requirement và Business Rules được gửi ra ngoài hệ thống; có thể vi phạm chính sách bảo mật nếu chứa dữ liệu nhạy cảm. | Prompt có thể chứa thông tin đăng nhập hoặc JWT Token; Token có thể xuất hiện trong response nếu sử dụng dữ liệu thật. |
+| **Biện pháp giảm thiểu** | Chỉ sử dụng Requirement mẫu hoặc dữ liệu đã được ẩn danh (Anonymize) trước khi đưa vào AI. | Thực hiện Anonymize Requirement, Use Case và thông tin dự án trước khi sử dụng AI. | Chỉ sử dụng tài khoản demo, xóa thông tin nhạy cảm khỏi Prompt và không commit Token lên Git. |
+| **Mức độ rủi ro** | **Trung bình** – Có rủi ro khi sử dụng dữ liệu dự án thực tế nhưng tài liệu chưa ghi nhận vấn đề cụ thể. | **Trung bình đến Cao** – Vì toàn bộ Requirement được gửi lên server TestRail; cần tuân thủ chính sách bảo mật doanh nghiệp. | **Thấp** – Chỉ sử dụng ThingsBoard Demo API, không sử dụng dữ liệu production nên không ghi nhận rủi ro đáng kể. |
+| **Kết luận** | Có thể sử dụng an toàn nếu Requirement đã được ẩn danh và không chứa thông tin nhạy cảm. | Cần đặc biệt lưu ý khi làm việc với dự án thực tế; nên ẩn danh hóa dữ liệu trước khi sử dụng. | Phù hợp để thử nghiệm và học tập với môi trường demo; không nên sử dụng trực tiếp thông tin xác thực của hệ thống production. |
