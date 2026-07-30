@@ -1,5 +1,3 @@
-# TOOL LIMITATIONS
-1. Jira Rovo AI (Ask Rovo)
 | **Mục** | **Chi tiết** |
 |----------|--------------|
 | **Điểm mạnh** | - Sinh nhanh User Story, Acceptance Criteria và High-Level Test Scenarios<br>- Cấu trúc output rõ ràng, dễ review<br>- Tuân thủ đúng ràng buộc của prompt (không sinh thừa validation ở cấp field)<br>- Văn phong phù hợp với QA |
